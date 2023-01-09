@@ -16,4 +16,4 @@ def uppercase(str):
         chr(ord(y) - difference) for y in characters
         ]
     )
-    print(message)
+    print("{}".format(message))
