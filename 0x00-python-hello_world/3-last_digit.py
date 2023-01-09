@@ -7,7 +7,7 @@ number = random.randint(-10000, 10000)
 last_digit = (abs(number) % 10)
 
 if (last_digit != 0):
-    last_digit = last_digit * (number / abs(number))
+    last_digit = int(last_digit * (number / abs(number)))
 
 status_determiner = {
     (lambda x: x == 0): "and is 0",
