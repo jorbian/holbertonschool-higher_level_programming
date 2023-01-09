@@ -5,7 +5,6 @@ def islower(c):
     length_of_alphabet = 26
 
     lowercase = (
-        (ord(c) >= value_of_a) and (ord(c) <= value_of_a + length_of_alphabet)
+        (ord(c) <= value_of_a) and (ord(c) >= value_of_a + length_of_alphabet)
     )
     return (lowercase)
-    
