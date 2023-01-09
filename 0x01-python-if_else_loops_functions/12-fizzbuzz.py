@@ -11,9 +11,9 @@ def fizzbuzz(
             "word": "Buzz",
             "num": 5
         }
-        ],
+        ]
 ):
-    for x in range(1,101):
+    for x in range(1, 101):
 
         say = ""
 
