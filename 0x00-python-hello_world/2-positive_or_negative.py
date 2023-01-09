@@ -10,4 +10,3 @@ elif (number > 0):
     print(str(number) + " is positive")
 else:
     print(str(number) + " is negative")
-
