@@ -4,7 +4,7 @@ import random
 
 number = random.randint(-10000, 10000)
 
-last_digit = abs(number) % 10
+last_digit = int((abs(number) % 10) * (number / abs(number)))
 
 status_determiner = {
     (lambda x: x == 0): "and is 0",
