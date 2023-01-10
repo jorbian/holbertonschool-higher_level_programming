@@ -2,5 +2,9 @@
 
 
 def print_last_digit(number):
-    print("{}".format(number % 10))
+    digit = "{}".format(number % 10)
+
+    print("{}".format{digit})
+
+    return digit
 
