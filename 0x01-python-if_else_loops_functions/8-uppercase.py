@@ -12,7 +12,7 @@ def uppercase(str):
     message = "".join([
         y if ord(y) < (
             value_of_a or ord(y) > value_of_a + length_of_alphabet
-         ) else 
+         ) else
         chr(ord(y) - difference) for y in characters
         ]
     )
