@@ -13,9 +13,9 @@ if __name__ == "__main__":
         "arguments"
     ][
         [
-        num_of_args == 0,
-        num_of_args == 1,
-        num_of_args >= 2
+            num_of_args == 0,
+            num_of_args == 1,
+            num_of_args >= 2
         ].index(True)
     ]
 
