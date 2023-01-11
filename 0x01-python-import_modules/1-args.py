@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     if status:
 
-        print("{} {}".format(num_of_args, status))
+        print("{} {}:".format(num_of_args, status))
 
         for i in range(num_of_args):
             print("{}: {}".format(i + 1, sys.argv[i + 1]))
