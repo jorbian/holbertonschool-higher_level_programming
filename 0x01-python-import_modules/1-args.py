@@ -27,3 +27,4 @@ if __name__ == "__main__":
             print("{}: {}".format(i + 1, sys.argv[i + 1]))
     else:
         print("0 arguments.")
+        
