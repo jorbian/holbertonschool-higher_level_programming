@@ -2,4 +2,4 @@
 
 
 def no_c(my_string):
-    pass
+    return ("".join([x for x in my_string if x.lower() != 'c']))
