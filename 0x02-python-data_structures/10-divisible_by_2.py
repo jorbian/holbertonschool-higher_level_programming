@@ -2,4 +2,4 @@
 
 
 def divisible_by_2(my_list=[]):
-    pass
+    return ([(x % 2 == 0) for x in my_list])
