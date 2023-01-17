@@ -2,4 +2,7 @@
 
 
 def square_matrix_simple(matrix=[]):
-    pass
+    return ([
+        [x ** 2 for x in y]
+        for y in matrix
+    ])
