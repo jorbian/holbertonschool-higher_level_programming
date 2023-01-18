@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-
 """CLASS DOCUMENTATION GOES HERE"""
+
 
 class Square:
     """REPRESENTATION OF A SQUARE WITH PRIVATE SIZE
