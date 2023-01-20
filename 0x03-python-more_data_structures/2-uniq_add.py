@@ -2,4 +2,4 @@
 
 
 def uniq_add(my_list=[]):
-    pass
+    return (sum(set(my_list)))
