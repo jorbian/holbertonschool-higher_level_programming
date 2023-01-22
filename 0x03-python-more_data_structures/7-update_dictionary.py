@@ -2,4 +2,6 @@
 
 
 def update_dictionary(a_dictionary, key, value):
-    pass
+    """REPLACE OR ADD KEY/VALUE TO DICTIONARY"""
+    a_dictionary[key] = value
+    return (a_dictionary)
