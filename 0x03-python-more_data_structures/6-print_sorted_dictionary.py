@@ -2,4 +2,5 @@
 
 
 def print_sorted_dictionary(a_dictionary):
-    pass
+    """PRINT DICT BY ORDERED KEYS"""
+    [print("{}".format(k, a_dictionary[k])) for k in sorted(a_dictionary)]
