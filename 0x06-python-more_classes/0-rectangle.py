@@ -13,7 +13,6 @@ class Rectangle:
             height (int): The height of the new rectangle.
         """
         self.width = width
-        self.height = height
 
     def width(self):
         """Get the width of rectangle"""
