@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """Class for a simple rectangle"""
 
 
