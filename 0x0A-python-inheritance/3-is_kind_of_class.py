@@ -4,4 +4,5 @@
 
 
 def is_kind_of_class(obj, a_class):
+    """This is the documentation"""
     return isinstance(obj, a_class)
