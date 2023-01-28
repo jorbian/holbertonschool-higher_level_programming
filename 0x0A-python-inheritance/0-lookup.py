@@ -1,4 +1,7 @@
 #!/usr/bin/python3
 
+"""This is a docstring"""
+
 def lookup(obj):
-    return (dir(obj))
+    """BASICALLY JUST DIR AN OBJECT"""
+    return dir(obj)
