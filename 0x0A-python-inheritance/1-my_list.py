@@ -7,4 +7,5 @@ class MyList(list):
     """EXACTLY WHAT IT SAYS ON THE TIN"""
 
     def print_sorted(self):
+        """Print list in sorted ascending order."""
         print(sorted(self))
