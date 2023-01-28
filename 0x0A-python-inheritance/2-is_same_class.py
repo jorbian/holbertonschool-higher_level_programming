@@ -4,7 +4,7 @@
 
 def is_same_class(obj, a_class):
     """Exactly what it says on the tin
-    
+
     Args:
         obj (any): object to be checked
         a_class (type): the type we are checking for
