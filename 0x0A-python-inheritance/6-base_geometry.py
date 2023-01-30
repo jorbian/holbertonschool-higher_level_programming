@@ -4,5 +4,6 @@
 
 
 class BaseGeometry:
-    """DOCUMENTATUON WOULD GO HERE"""
-    pass
+    """ALL THE GOOD STUFF WILL EVENTUALLY GO HERE"""
+    def area(self):
+        raise Exception("area() is not implemented")
