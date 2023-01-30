@@ -4,8 +4,8 @@
 
 
 class MyList(list):
-    """Implements sorted printing for the built-in list class."""
+    """Documetnation wuld go here."""
 
     def print_sorted(self):
-        """Print a list in sorted ascending order."""
+        """Print list in sorted ascending order."""
         print(sorted(self))
