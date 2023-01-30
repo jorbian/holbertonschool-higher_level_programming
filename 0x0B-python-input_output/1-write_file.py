@@ -3,8 +3,7 @@
 """Define textfile-reading function."""
 
 
-def read_file(filename=""):
+def write_file(filename="", text=""):
     """MORE DOCUMENATION WOULD GO HERe"""
-    with open(filename, encoding="utf-8") as file:
-        lines = file.readlines()
-    print(lines)
+    with open(filename, 'w') as file:
+        file.write(text)
