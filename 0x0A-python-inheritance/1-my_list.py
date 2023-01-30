@@ -4,8 +4,8 @@
 
 
 class MyList(list):
-    """Documetnation wuld go here."""
-
+    """Documentation would go here"""
     def print_sorted(self):
-        """Print list in sorted ascending order."""
-        print(sorted(self))
+        _t = self[:]
+        _t.sort()
+        print(_t)
