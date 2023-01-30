@@ -1,0 +1,55 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> bg = BaseGeometry()
+
+test a reasonable int, like 12
+>>> bg.integer_validator("my_int", 12)
+
+test a large int, something over 257...
+>>> bg.integer_validator("spam", 512) 
+
+TYPE ERROR TESTS
+>>> bg.integer_validator("name", "Pedrinho")
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("name", 4.5)
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("name", [2])
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("name", bg)
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("bar", None)
+Traceback (most recent call last):
+...
+TypeError: bar must be an integer
+
+>>> bg.integer_validator("foo", 0)
+Traceback (most recent call last):
+...
+ValueError: foo must be greater than 0
+
+>>> bg.integer_validator("age", -12)
+Traceback (most recent call last):
+...
+ValueError: age must be greater than 0
+
+>>> bg.integer_validator("the quick brown fox", -285)
+Traceback (most recent call last):
+...
+ValueError: the quick brown fox must be greater than 0
+
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
