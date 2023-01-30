@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-
 """Define textfile-reading function."""
+import json
 
 
-def read_file(filename=""):
+def to_json_string(my_obj):
     """MORE DOCUMENATION WOULD GO HERe"""
-    with open(filename, encoding="utf-8") as file:
-        lines = file.readlines()
-    print(lines)
+    return json.dumps(my_obj)
