@@ -3,5 +3,4 @@
 
 
 def pascal_triangle(n):
-    """The magic happens here"""
-    pass
+    pass 
