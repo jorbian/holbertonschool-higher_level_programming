@@ -1,1 +1,1 @@
-
+-- Script that lists all records of table 'second_table' of the database

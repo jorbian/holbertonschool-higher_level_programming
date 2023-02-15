@@ -1,1 +1,2 @@
-
+-- Script that lists number of records with same score in table 'second_table'
+-- of the database

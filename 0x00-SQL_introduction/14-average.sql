@@ -1,1 +1,2 @@
-
+-- Script that computes average score of all records in table 'second_table'
+-- of the database
