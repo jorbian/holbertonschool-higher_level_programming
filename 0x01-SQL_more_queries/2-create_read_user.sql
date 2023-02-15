@@ -1,1 +1,1 @@
-
+-- Creates table 'force_name' on server.
