@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""THIS IS SOME DOCUMENTATION"""
 import sys
 import MySQLdb
 
