@@ -9,18 +9,17 @@ import MySQLdb
 if __name__ == "__main__":
 
     database = MySQLdb.connect(
-        host='localhost',
+        host="localhost",
+        port=3306,
         user=sys.argv[1],
         passwd=sys.argv[2],
-        db=sys.argv[3],
-        port=3306
+        db=sys.argv[3]
     )
     cursor = database.cursor()
+
     cursor.execute(
-            """SELECT C.id, C.name, S.name
-            FROM cities C
-            INNER JOIN states S
-            ON C.state_id = S.id
-            ORDER BY C.id"""
+        'SELECT cities.id, cities.name, states.name \
+        FROM cities LEFT JOIN states \
+        ON cities.state_id = states.id'
     )
     [print(city) for city in cursor.fetchall()]
