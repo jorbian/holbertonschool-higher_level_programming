@@ -7,8 +7,6 @@ import sys
 import MySQLdb
 
 if __name__ == "__main__":
-    if len(sys.argv) < 5:
-        sys.exit("INSUFFICENT NUMBER OF ARGUMENTS")
 
     database = MySQLdb.connect(
         user=sys.argv[1],
