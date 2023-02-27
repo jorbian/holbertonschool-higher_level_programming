@@ -14,6 +14,6 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM 'states'")
+    cursor.execute("SELECT * FROM `states`")
 
     [print(state) for state in cursor.fetchall() if state[1] == sys.argv[4]]
