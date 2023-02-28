@@ -11,8 +11,6 @@ from model_state import State
 
 if __name__ == "__main__":
 
-    target_letter = "a"
-
     engine = create_engine(
         "mysql+mysqldb://{}:{}@localhost/{}".format(
             sys.argv[1],
@@ -25,7 +23,7 @@ if __name__ == "__main__":
     session = Session()
 
     for state in session.query(State):
-        if target_letter in state.name:
+        if "a" in state.name:
             session.delete(state)
 
     session.commit()
