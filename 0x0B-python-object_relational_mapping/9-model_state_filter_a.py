@@ -29,4 +29,9 @@ if __name__ == "__main__":
             State.name
             .contains('a'))
     ):
-        print(f"{state.id}: {state.name}")
+        print(
+            "{}: {}".format(
+                state.id,
+                state.name
+            )
+        )
