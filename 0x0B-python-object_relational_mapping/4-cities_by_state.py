@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 LISTS CITIES OF DATABASE 'hbtn_0e_4_usa' ordered by city id.
