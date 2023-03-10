@@ -6,9 +6,9 @@ import urllib.request
 def display_response_body(response):
     """THE REAL SUBSTANCE OF THIS TASK"""
     display_template = """Body response:
-    - type: {}
-    - content: {}
-    - utf8 content: {}"""
+\t- type: {}
+\t- content: {}
+\t- utf8 content: {}"""
 
     if response is not None:
         response_body = response.read()
