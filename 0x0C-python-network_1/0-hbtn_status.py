@@ -3,6 +3,7 @@
 
 import urllib.request
 
+
 def display_response_body(response):
     """THE REAL SUBSTANCE OF THIS TASK"""
     display_template = """Body response:
