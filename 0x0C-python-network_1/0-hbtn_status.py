@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+"""AN EXPRIMENT WITH A FUNCTIONAL APPROACH TO TASK"""
 
 import urllib.request
-
 
 def display_response_body(response):
     """THE REAL SUBSTANCE OF THIS TASK"""
@@ -22,7 +22,7 @@ def display_response_body(response):
 
 
 def do_something_to_page(url, retreval_func, thing_func):
-    """ATTEMPTING TO TAKE RECYCLABLE FUNCTIONAL APPROACH"""
+    """AGAIN, ATTEMPTING TO TAKE RECYCLABLE FUNCTIONAL APPROACH"""
     with retreval_func(url) as page:
         thing_func(page)
 
