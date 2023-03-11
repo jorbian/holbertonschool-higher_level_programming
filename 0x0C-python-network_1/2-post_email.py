@@ -23,5 +23,5 @@ if __name__ == "__main__":
             ).encode("ascii")
         ),
         urllib.request.urlopen,
-        (lambda x: print(getattr(getattr(x, "read"(), "decode")("utf-8"))))
+        (lambda x: print(getattr(getattr(x, "read")(), "decode")("utf-8")))
     )
