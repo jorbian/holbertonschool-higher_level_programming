@@ -10,6 +10,6 @@ if (numbers.length < 2) {
 } else {
   numbers = numbers.map(num => parseInt(num));
   const max = Math.max(...numbers);
-  numbers = nums.filter(num => num !== max);
+  numbers = numbers.filter(num => num !== max);
   console.log(Math.max(...numbers));
 }
