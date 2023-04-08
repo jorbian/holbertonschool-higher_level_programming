@@ -5,8 +5,6 @@ const numbers = (
     .map(Number)
 );
 
-console.log(numbers.length)
-
 if (numbers.length <= 1) {
   console.log(0);
 } else {
