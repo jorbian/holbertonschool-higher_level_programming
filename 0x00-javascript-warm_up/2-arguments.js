@@ -2,15 +2,13 @@
 
 let message;
 
-numArgs = process.argv.length;
+const numArgs = process.argv.length;
 
 if (numArgs <= 2) {
   message = 'No argument';
-}
-else if (numArgs == 3) {
+} else if (numArgs === 3) {
   message = 'Argument found';
-}
-else {
+} else {
   message = 'Arguments found';
 }
 
