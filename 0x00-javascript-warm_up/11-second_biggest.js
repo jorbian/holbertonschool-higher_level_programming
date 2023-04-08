@@ -2,7 +2,7 @@
 
 const numbers = (
   (process.argv).slice(2)
-  .map(Number)
+    .map(Number)
 );
 
 if (numbers.length < 2) {
