@@ -7,17 +7,13 @@ const area = Math.floor(
 );
 
 if (!isNaN(area)) {
-  let square = '';
   const block = 'X';
 
-  for (let i = 0; i < area; i++) {
-    for (let j = 0; j < area; j++) {
-      square += block;
-    }
-    square = (i == area) ? square: square + '\n';
+  for (let r = 0; r < area; r++) {
+    let row = '';
+    for (let c = 0; c < area; c++) row += block;
+    console.log(row);
   }
-
-  console.log(square);
 } else {
   console.log('Missing size');
 }
