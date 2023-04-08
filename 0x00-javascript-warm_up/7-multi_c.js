@@ -1,6 +1,7 @@
 #!/usr/bin/node
 
 const message = 'C is fun';
+
 const numTimes = Math.floor(
   Number(
     process.argv[2]
