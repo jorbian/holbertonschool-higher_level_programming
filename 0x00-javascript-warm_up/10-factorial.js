@@ -1,17 +1,11 @@
 #!/usr/bin/node
 
-const inputNum = Math.floor(
-  Number(
-    process.argv[2]
-  )
-);
-
-function factorial(x) {
-  if (x < 1) {
+function factorial (x) {
+  if (isNaN(n) || n === 0) {
     return 1;
   } else {
     return x * factorial(x - 1);
   }
 }
 
-console.log(factorial(inputNum));
+console.log(factorial(parseInt(process.argv[2])));
