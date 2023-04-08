@@ -11,7 +11,7 @@ const numTimes = Math.floor(
 if (isNaN(numTimes)) {
   console.log('Missing number of occurrences');
 } else {
-  for (let i = 0; i < message; i++) {
+  for (let i = 0; i < numTimes; i++) {
     console.log(message);
   }
 }
