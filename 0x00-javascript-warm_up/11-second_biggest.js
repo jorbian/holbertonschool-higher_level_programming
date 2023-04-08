@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const numbers = (
+let numbers = (
   (process.argv).slice(2)
     .map(Number)
 );
@@ -8,7 +8,8 @@ const numbers = (
 if (numbers.length < 2) {
   console.log(0);
 } else {
-  console.log(
-    numbers.sort()[numbers.length - 2]
-  );
+  numbers = numbers.map(num => parseInt(num));
+  const max = Math.max(...nums);
+  nums = nums.filter(num => num !== max);
+  console.log(Math.max(...nums));
 }
