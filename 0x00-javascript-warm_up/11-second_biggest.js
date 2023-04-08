@@ -5,7 +5,9 @@ const numbers = (
     .map(Number)
 );
 
-if (numbers.length < 2) {
+console.log(numbers.length)
+
+if (numbers.length <= 1) {
   console.log(0);
 } else {
   console.log(
