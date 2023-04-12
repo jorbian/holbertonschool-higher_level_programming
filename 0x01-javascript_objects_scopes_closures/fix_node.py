@@ -8,10 +8,10 @@ from pathlib import Path
 THIS_FOLDER = Path(abspath(__file__)).parent
 
 def fix_node_files(folder_obj):
-    
+
     js_files = folder_obj.glob('*.js')
     for file in js_files:
-        subprocess.run(["semistandard", "fix", file.name])
+        subprocess.run(["semistandard", "--fix", file.name])
 
 if __name__ == "__main__":
     
