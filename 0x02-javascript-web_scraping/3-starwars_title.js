@@ -2,9 +2,11 @@
 
 const request = require('request');
 
-const url = 'http://swapi.co/api/films/' + process.argv[2];
+const endpoint = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];
 
 request(
-  url,
-  (error, body) => console.log(error || JSON.parse(body).title)
+  endpoint,
+  (err, body) => (
+    err ? console.log(err) : console.log(JSON.parse(body).title)
+  )
 );
